@@ -98,10 +98,11 @@ h1{
 
 .progress-bar{
 
-  width:0%;
   height:100%;
+
   background:#06b6d4;
-  transition:0.5s;
+
+  transition:width 0.2s linear;
 
 }
 
@@ -163,6 +164,8 @@ select{
   border:1px solid #374151;
   background:#111827;
   color:white;
+
+  will-change:auto;
 
 }
 
@@ -312,5 +315,31 @@ select:focus{
 
   color:#38bdf8;
   text-decoration:none;
+
+}
+button,
+input,
+select,
+textarea,
+.contact-card,
+.progress-bar{
+
+  transform:translateZ(0);
+
+}
+html,
+body{
+
+  overflow-x:hidden;
+
+}
+html{
+
+  scroll-behavior:smooth;
+
+}
+*{
+
+  -webkit-tap-highlight-color:transparent;
 
 }
