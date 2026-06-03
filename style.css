@@ -19,8 +19,15 @@ body{
 .top-header{
 
   display:flex;
+
   justify-content:space-between;
+
   align-items:center;
+
+  gap:12px;
+
+  width:100%;
+
   margin-bottom:25px;
 
 }
@@ -33,11 +40,18 @@ body{
 
 }
 
+/* LEFT LOGO */
+
 .logo-section img{
 
-  width:260px;
-  height:100px;
-  background:rgba(255, 255, 255, 0);
+  width:min(42vw, 170px);
+
+  height:auto;
+
+  object-fit:contain;
+
+  background:rgba(255,255,255,0);
+
   padding:3px;
 
 }
@@ -46,8 +60,10 @@ body{
 
 .creator-logo{
 
-  width:250px;
-  height:100px;
+  width:min(28vw, 110px);
+
+  height:auto;
+
   object-fit:contain;
 
 }
@@ -341,5 +357,28 @@ html{
 *{
 
   -webkit-tap-highlight-color:transparent;
+
+}
+/* MOBILE LOGO FIX */
+
+@media screen and (max-width:768px){
+
+  .top-header{
+
+    align-items:flex-start;
+
+  }
+
+  .logo-section img{
+
+    width:min(40vw, 150px);
+
+  }
+
+  .creator-logo{
+
+    width:min(24vw, 90px);
+
+  }
 
 }
