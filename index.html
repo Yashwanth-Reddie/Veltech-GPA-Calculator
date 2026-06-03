@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Vel Tech GPA Calculator</title>
+
+  <!-- CSS -->
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <!-- HEADER -->
+
+  <div class="top-header">
+
+    <div class="logo-section">
+
+      <img src="IMG_5377.PNG">
+
+    </div>
+
+    <!-- RIGHT LOGO -->
+
+     <img
+      class="creator-logo"
+      src="Yashwanth Reddie.png">
+
+  </div>
+
+  <!-- TITLE -->
+
+  <h1>Vel Tech University GPA Calculator</h1>
+
+  <!-- GPA -->
+
+  <div class="title">
+
+    You have scored Grade Point Average of
+
+    <br><br>
+
+    <span id="gpa">0.00</span>
+
+  </div>
+
+  <!-- PROGRESS -->
+
+  <div class="progress-container">
+
+    <div class="progress-bar" id="progressBar"></div>
+
+  </div>
+
+   <!-- RESET -->
+
+    <button class="reset-btn" onclick="resetAll()">
+
+  Reset
+
+    </button>
+
+    <!-- TABLE -->
+
+   <div class="table-container">
+
+  <table>
+
+    <thead>
+
+      <tr>
+
+        <th>S.No</th>
+        <th>Credits</th>
+        <th>Grade</th>
+
+      </tr>
+
+    </thead>
+
+    <tbody id="tableBody">
+
+    </tbody>
+
+  </table>
+
+</div>
+
+<!-- BUTTONS -->
+
+<div class="buttons">
+
+    <button class="add-btn" onclick="addRow()">
+
+      Add
+
+    </button>
+
+    <button class="submit-btn" onclick="calculateGPA()">
+
+      Submit
+
+    </button>
+
+  </div>
+  <!-- ENQUIRY SECTION -->
+
+ <div class="enquiry-section">
+
+  <h2>Enquiry</h2>
+
+  <p>
+
+    Have questions or feedback?
+
+    <a href="contact.html" class="contact-link">
+
+      Contact Us
+
+    </a>
+
+  </p>
+
+  <form class="enquiry-form">
+
+    <input
+      type="text"
+      placeholder="Your Name"
+      required
+    >
+
+    <input
+      type="email"
+      placeholder="Your Email"
+      required
+    >
+
+    <textarea
+      placeholder="Your Message"
+      rows="5"
+      required
+    ></textarea>
+
+    <button type="submit" class="enquiry-btn">
+
+      Send Enquiry
+
+    </button>
+
+  </form>
+
+ </div> 
+  <!-- FOOTER -->
+
+  <div class="footer">
+
+    <a href="#">Source Code</a>
+
+    © 2026 Vel Tech GPA Calculator //
+    Created by Yashwanth Reddie
+
+  </div>
+
+  <!-- JAVASCRIPT -->
+
+  <script src="script.js"></script>
+
+</body>
+</html>

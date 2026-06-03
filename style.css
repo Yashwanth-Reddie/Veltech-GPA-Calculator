@@ -1,0 +1,316 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+
+  background:#111827;
+  color:white;
+  min-height:100vh;
+  padding:15px;
+
+}
+
+/* TOP HEADER */
+
+.top-header{
+
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:25px;
+
+}
+
+.logo-section{
+
+  display:flex;
+  align-items:center;
+  gap:10px;
+
+}
+
+.logo-section img{
+
+  width:260px;
+  height:100px;
+  background:rgba(255, 255, 255, 0);
+  padding:3px;
+
+}
+
+/* RIGHT LOGO */
+
+.creator-logo{
+
+  width:250px;
+  height:100px;
+  object-fit:contain;
+
+}
+
+/* MAIN TITLE */
+
+h1{
+    text-align:center;
+  font-size:35px;
+  margin-bottom:20px;
+  color:#e5e7eb;
+  line-height:1.3;
+
+}
+
+/* GPA TEXT */
+
+.title{
+
+  text-align:center;    
+  font-size:18px;
+  font-weight:bold;
+  margin-bottom:10px;
+  line-height:1;
+  color:#d1d5db;
+
+}
+
+#gpa{   
+
+  color:#06b6d4;
+  font-size:35px;
+
+}
+
+/* PROGRESS BAR */
+
+.progress-container{
+
+  width:100%;
+  height:18px;
+  background:#374151;
+  border-radius:20px;
+  overflow:hidden;
+  margin-bottom:25px;
+
+}
+
+.progress-bar{
+
+  width:0%;
+  height:100%;
+  background:#06b6d4;
+  transition:0.5s;
+
+}
+
+/* RESET */
+
+.reset-btn{
+
+  background:none;
+  border:1.5px solid #ef4444;
+  color:#ef4444;
+  padding:10px 15px;
+  border-radius:8px;
+  font-size:15px;
+  margin-bottom:20px;
+  cursor:pointer;
+
+}
+
+/* TABLE */
+
+table{
+
+  width:100%;
+  border-collapse:collapse;
+
+}
+.table-container{
+
+  overflow-x:auto;
+
+}
+
+th{
+
+  text-align:center;
+  padding:12px 6px;
+  font-size:15px;
+  color:#d1d5db;
+  border-bottom:1px solid #374151;
+
+}
+
+td{
+
+  padding:12px 6px;
+  border-bottom:1px solid #374151;
+  font-size:15px;
+  text-align:center;
+
+}
+
+input,
+select{
+
+  width:100%;
+  padding:12px;
+  font-size:16px;
+  border-radius:10px;
+  border:1px solid #374151;
+  background:#111827;
+  color:white;
+
+}
+
+input:focus,
+select:focus{
+
+  outline:none;
+  border-color:#06b6d4;
+
+}
+
+/* BUTTONS */
+
+.buttons{
+
+  margin-top:25px;
+  display:flex;
+  gap:10px;
+
+}
+
+.add-btn{
+
+  flex:1;
+  background:none;
+  border:1.5px solid white;
+  color:white;
+  padding:12px;
+  border-radius:8px;
+  font-size:15px;
+  cursor:pointer;
+
+}
+
+.submit-btn{
+
+  flex:1;
+  background:none;
+  border:1.5px solid #06b6d4;
+  color:#06b6d4;
+  padding:12px;
+  border-radius:8px;
+  font-size:15px;
+  cursor:pointer;
+
+}
+/* ENQUIRY SECTION */
+
+.enquiry-section{
+
+  margin-top:40px;
+  padding:20px;
+  border:1px solid #374151;
+  border-radius:12px;
+  background:#0f172a;
+
+}
+
+.enquiry-section h2{
+
+  color:#06b6d4;
+  margin-bottom:10px;
+  font-size:30px;
+  font-weight:bold;
+
+}
+
+.enquiry-section p{
+
+  color:#9ca3af;
+  margin-bottom:10px;
+  font-size:15px;
+  line-height:1.6;
+
+}
+
+/* CONTACT LINK */
+
+.contact-link{
+
+  color:#00a2ff;    
+  text-decoration:underline;
+  font-size:20px;
+  font-weight:bold;
+
+}
+
+.enquiry-form{
+
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+
+}
+
+.enquiry-form input,
+.enquiry-form textarea{
+
+  width:100%;
+  padding:12px;
+  border-radius:10px;
+  border:1px solid #374151;
+  background:#111827;
+  color:white;
+  font-size:15px;
+
+}
+
+.enquiry-form textarea{
+
+  resize:none;
+
+}
+
+.enquiry-btn{
+
+  background:#06b6d4;
+  color:white;
+  border:none;
+  padding:14px;
+  border-radius:10px;
+  font-size:16px;
+  cursor:pointer;
+
+}
+
+.enquiry-btn:hover{
+
+  opacity:0.9;
+
+}
+
+/* FOOTER */
+
+.footer{
+
+  margin-top:35px;
+  border-top:1px solid #374151;
+  padding-top:15px;
+  color:#9ca3af;
+  font-size:20px;
+  text-align:center;
+
+}
+
+.footer a{
+
+  color:#38bdf8;
+  text-decoration:none;
+
+}
