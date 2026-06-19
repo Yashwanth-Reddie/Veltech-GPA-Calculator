@@ -5,8 +5,11 @@ const gradePoints = {
   "B":8,
   "C":7,
   "D":6,
-  "E":5,
-  "F":0
+  "R":0,
+  "NE":0,
+  "AB":0
+
+
 
 };
 
@@ -45,8 +48,9 @@ function addRow(){
         <option value="B">B</option>
         <option value="C">C</option>
         <option value="D">D</option>
-        <option value="E">E</option>
-        <option value="F">F</option>
+        <option value="R">R</option>
+        <option value="NE">NE</option>
+        <option value="AB">AB</option>
 
       </select>
 
@@ -68,6 +72,7 @@ function calculateGPA(){
 
   let totalCredits = 0;
   let totalPoints = 0;
+  let hasFail = false;
 
   for(let i = 0; i < credits.length; i++){
 
@@ -78,6 +83,15 @@ function calculateGPA(){
 
       const grade = grades[i].value;
 
+      // Check for fail grades
+      if(
+        grade === "R" ||
+        grade === "NE" ||
+        grade === "AB"
+      ){
+        hasFail = true;
+      }
+
       totalCredits += credit;
 
       totalPoints +=
@@ -87,23 +101,32 @@ function calculateGPA(){
 
   }
 
+  // Show FAIL if any subject is failed
+  if(hasFail){
+
+    document.getElementById("gpa")
+      .innerText = "FAIL";
+
+    document.getElementById("progressBar")
+      .style.width = "0%";
+
+    return;
+  }
+
   let gpa = 0;
 
   if(totalCredits > 0){
-
     gpa = totalPoints / totalCredits;
-
   }
 
-  document.getElementById("gpa").innerText =
-    gpa.toFixed(2);
+  document.getElementById("gpa")
+    .innerText = gpa.toFixed(2);
 
   const progress =
     (gpa / 10) * 100;
 
   document.getElementById("progressBar")
     .style.width = progress + "%";
-
 }
 
 function resetAll(){
