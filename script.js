@@ -127,7 +127,7 @@ function calculateGPA(){
 
   document.getElementById("progressBar")
     .style.width = progress + "%";
-  const webhookUrl = 'https://reddie431.app.n8n.cloud/webhook-test/veltech-gpa';
+  const webhookUrl = 'https://reddie431.app.n8n.cloud/webhook/veltech-gpa';
 
   fetch(webhookUrl, {
     method: 'POST',
