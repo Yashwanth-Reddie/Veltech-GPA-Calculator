@@ -127,6 +127,20 @@ function calculateGPA(){
 
   document.getElementById("progressBar")
     .style.width = progress + "%";
+  const webhookUrl = 'https://reddie431.app.n8n.cloud/webhook-test/veltech-gpa';
+
+  fetch(webhookUrl, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      gpa: gpa.toFixed(2), 
+      timestamp: new Date().toISOString()
+    })
+  })
+  .then(response => console.log('Data successfully sent to n8n!'))
+  .catch(error => console.error('Error sending to n8n:', error));
 }
 
 function resetAll(){
